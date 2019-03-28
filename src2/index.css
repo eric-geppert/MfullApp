@@ -6,22 +6,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /** background image */
+  /* background-image: url("./images/background_image.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; */
+  /* can change later if want same images on all pages */
+  /* import in index.js */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-/* add below later! */
-/* select.form-control,
-textarea.form-control,
-input.form-control {
-  font-size: 16px;
-}
-input[type=file] {
-  width: 100%;
-} */
-/* tweak the styles of the form fields so that the mobile browser 
-does not zoom in on them on focus. We just need them to have a minimum 
-font size of 16px to prevent the zoom. */
