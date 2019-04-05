@@ -1,74 +1,39 @@
 import React, { Component } from "react";
 import { pdfjs } from 'react-pdf';
 import SimpleMenu from "../components/SimpleMenu";
-import workoutList from "../workout.json";
-import RadioButton from "../components/RadioButton";
+// import store from '../Redux/Store/Store';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-// import "./Testimonials.css";
-
-export default class Program extends Component {
-//----
-  constructor(){
-    super();
-    // console.log("props in constructor:", props);
-    this.state={
-      search: ""
-    }; //why need^??????
-    this.onButtonUpdate=this.onButtonUpdate.bind(this);
-  }
-  // state = {
-  //   search: ""
-  // };
-//----
 
 
-  renderWorkout = workout => {
-    const { search } = this.state; //just added was "gain"
-    // const search = "gain";
-    // var code = country.code.toLowerCase();
-    var goal=workout.goal; //was "gain"
-    if( search !== "" && workout.goal.indexOf( search ) === -1 ){
-        return null
-    }
-  
+class Program extends Component {
+
+  renderWorkout(workout){
     return (
-      <SimpleMenu name={workout.name} /> //add file later!!!
+      <SimpleMenu key={workout.name} name={workout.name}/>
       );
     };
-    
-    onchange = e => {
-      this.setState({ search: e.target.value });
-    };
-    //need^????????????????????
-    onButtonUpdate(buttonValue) {
-      // console.log("search:", search);
-      this.setState({search: buttonValue}); //this.value
-    };
-
+  
   render() {
-    const { search } = this.state;
-    //why was it a const? (below)
-    var filteredWorkouts = workoutList.filter(workout => {
-      return workout.goal === "search";
-    });
-
-    if(filteredWorkouts.length === 0)
-    {
-      filteredWorkouts=workoutList; //if nothing selected display all
+    var programWorkouts;
+    if(typeof this.props.skill==="undefined"){
+      console.log("program.js: props undefined")
     }
-    // console.log(filteredWorkouts)
+    else if(this.props.skill==="all")
+      programWorkouts=this.props.skillList;
+    else{
+      programWorkouts= this.props.skillList.filter(workout => 
+        (this.props.skill===workout.skill));
+    }
+    
     return (
-      <div className= "wholePage">
-                                          {/* have to use bind since used this in update Function */}
-        {/* <RadioButton onchange={this.onchange} UpdateButton={this.onButtonUpdate.bind(this)} />  */}
-        <RadioButton onClick={this.onchange} UpdateButton={this.onButtonUpdate.bind(this)} /> 
-      {/* // <SimpleMenu name={workoutList[0].name} file={require("../images/handout.pdf")} /> */}
-          <div className="row">
-            {filteredWorkouts.map(workout => {
-              return this.renderWorkout(workout);
-            })}
-          </div>
+      <div>
+        {programWorkouts.map(workout => {
+            return this.renderWorkout(workout)
+          })}
       </div>
     );
+
   }
 }
+
+export default Program;

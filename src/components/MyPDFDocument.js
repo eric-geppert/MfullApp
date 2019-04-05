@@ -3,9 +3,9 @@ import React, { Component } from "react";
 import { Document, Page, pdfjs } from 'react-pdf';
 
 class MyPDFDocument extends Component {
-    constructor(props) { //need?
-        super(props);    //need?
-    }
+    // constructor(props) { //need?
+    //     super(props);    //need?
+    // }
     render(){
         return(              //myPDF
             <Document file={this.props.file}>

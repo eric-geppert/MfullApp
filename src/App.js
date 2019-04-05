@@ -4,6 +4,8 @@ import { Nav, Navbar, NavItem } from "react-bootstrap";
 import "./App.css";
 import Routes from "./Routes";
 import { LinkContainer } from "react-router-bootstrap";
+// import configureStore from "./Redux/Store/Store.js";            //added for redux
+// import { Provider as ReduxProvider } from "react-redux"; //
 
 class App extends Component {
   constructor(props) {
@@ -28,13 +30,16 @@ class App extends Component {
       userHasAuthenticated: this.userHasAuthenticated
     }; //Pass the Session State to the Routes
     
+    // const reduxStore = configureStore(window.REDUX_INITIAL_DATA);
+
     return (
+      // <ReduxProvider store={reduxStore}>
       <div className="App container">
         <Navbar fluid collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
               <Link to="/">Homepage</Link>
-              <Link to="/Program" style={{paddingLeft:25}}>Find my Program</Link>
+              <Link to="/RadioButton" style={{paddingLeft:25}}>Find my Program</Link>
               <Link to="/Movement" style={{paddingLeft:25}}>Movement Library</Link>
               <Link to="/Testimonials" style={{paddingLeft:25}}>Testimonials</Link>
             </Navbar.Brand>
@@ -66,42 +71,10 @@ class App extends Component {
         </Navbar>
         <Routes childProps={childProps} />
       </div>
+      // </ReduxProvider>
     );
   }  
   
 }
 
 export default App;
-
-
-
-{/* <LinkContainer to="/signup">
-                <NavItem>Signup</NavItem>
-              </LinkContainer>
-              <LinkContainer to="/login">
-                <NavItem>Login</NavItem>
-              </LinkContainer> */}
-
-// render() {
-//   return (
-//     <div className="App container">
-//       <Navbar fluid collapseOnSelect>
-//         <Navbar.Header>
-//           <Navbar.Brand>
-//             <Link to="/">Scratch</Link>
-//           </Navbar.Brand>
-//           <Navbar.Toggle />
-//         </Navbar.Header>
-//         <Navbar.Collapse>
-//           <Nav pullRight>
-//             <NavItem href="/signup">Signup</NavItem>
-//             {/* moved away from these because it refreshs the
-//             page and we are making a single page app */}
-//             <NavItem href="/login">Login</NavItem>
-//           </Nav>
-//         </Navbar.Collapse>
-//       </Navbar>
-//       <Routes />
-//     </div>
-//   );
-// }

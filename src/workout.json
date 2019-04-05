@@ -2,34 +2,43 @@
     {
       "name": "work1",
       "goal": "gain",
-      "gym type": "crossfit",
-      "days/week": "3",
-      "skill level": "beginner",
+      "gym": "crossfit",
+      "days": "3",
+      "skill": "beginner",
       "pdfLink": "./images/handout"
     },
     {
         "name": "work2",
         "goal": "lose",
-        "gymtype": "crossfit",
-        "days/week": "3",
-        "skill level": "beginner",
+        "gym": "crossfit",
+        "days": "3",
+        "skill": "beginner",
         "pdfLink": "./images/handout"
     },
     {
         "name": "work3",
         "goal": "maintain",
-        "gymtype": "crossfit",
-        "days/week": "3",
-        "skill level": "beginner",
+        "gym": "crossfit",
+        "days": "3",
+        "skill": "beginner",
         "pdfLink": "./images/handout"
 
     },
     {
         "name": "work4",
         "goal": "gain",
-        "gymtype": "weightlifting",
-        "days/week": "3",
-        "skill level": "beginner",
+        "gym": "weightlifting",
+        "days": "4",
+        "skill": "beginner",
+        "pdfLink": "/images/handout"
+
+    },
+    {
+        "name": "work5",
+        "goal": "gain",
+        "gym": "weightlifting",
+        "days": "4",
+        "skill": "advanced",
         "pdfLink": "/images/handout"
 
     }

@@ -6,11 +6,7 @@ import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
-// import store from '../Redux/Store/Store'
-// import updateSelected from '../Redux/Actions/UpdateGoal';
-// import updateGym from '../Redux/Actions/UpdateGym';
-import workouts from '../workout';
-import RadioButtonChild from './RadioButtonChild'
+import RadioSkills from './RadioSkills';
 
 const styles = theme => ({
   root: {
@@ -24,27 +20,28 @@ const styles = theme => ({
   },
 });
 
-class RadioButton extends React.Component {
+class RadioDays extends React.Component {
   constructor(props) {
     super();
     this.state = {
-      goal: 'all',
-      filteredWorkouts: workouts,
-    };
+        days: 'all'
+    };    
 }
 
   handleChange = event => {
-    this.setState({ goal: event.target.value});
+        this.setState({ days: event.target.value});
   };
 
   render() {
-    const { classes } = this.props; // need?
-
+    const { classes } = this.props;
+    //days filter radiochild (child1) gym
+    let dayList=this.props.filteredWorkoutList.filter(workout =>(this.props.gym===workout.gym)||(this.props.gym==="all"));
+    
     return (
       <div className={classes.root}>
-        <div className={"goal"}>
+        <div className="days">
           <FormControl component="fieldset" className={classes.formControl}>
-            <FormLabel component="legend">Goal</FormLabel>
+            <FormLabel component="legend">Days/week</FormLabel>
             <RadioGroup
               className={classes.group}
               value={this.state.value}
@@ -52,37 +49,37 @@ class RadioButton extends React.Component {
               defaultValue="all"
             >
               <FormControlLabel 
-                value="gain"
+                value="5"
                 control={<Radio color="primary" />} 
-                label="gain" 
+                label="5" 
               />
               <FormControlLabel 
-                value="lose" 
+                value="4" 
                 control={<Radio color="primary" />} 
-                label="lose" 
+                label="4" 
               />
               <FormControlLabel
-                value="maintain" 
+                value="3" 
                 control={<Radio color="primary" />} 
-                label="maintain" 
+                label="3" 
               />
               <FormControlLabel
                 value="all" 
                 control={<Radio color="primary" />} 
-                label="all" 
+                label="see all" 
               />
             </RadioGroup>
           </FormControl>
-          </div>
-        <div className={"gymButton"}>
-        <RadioButtonChild goal={this.state.goal}/>
+        </div>
+        <div className={"skills"}>
+            <RadioSkills dayList={dayList} days={this.state.days}/>
         </div>
       </div>
     );
   }
 }
 
-RadioButton.propTypes = {
+RadioDays.propTypes = {
   classes: PropTypes.object.isRequired,
 };
-export default withStyles(styles)(RadioButton);    
+export default withStyles(styles)(RadioDays);    
