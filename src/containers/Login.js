@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import "./Login.css";
-import { Auth } from "aws-amplify";
-
+// import userHasAuthenticated from '../App';
+import toggleLoading from '../App';
+import { Redirect } from 'react-router-dom'
 
 export default class Login extends Component {
   constructor(props) {
@@ -10,8 +11,16 @@ export default class Login extends Component {
 
     this.state = {
       email: "",
-      password: ""
+      password: "",
+      redirect: false
     };
+  }
+
+  renderRedirect = () => {
+    console.log("redirecting: " + this.state.redirect);
+    if (this.state.redirect) {
+      return <Redirect to='/' />
+    }
   }
 
   validateForm() {
@@ -24,26 +33,49 @@ export default class Login extends Component {
     });
   }
 
-//   handleSubmit = event => {
-//     event.preventDefault();
-//   }
-//change to SpringBoot code, or implement only inside of login page??
 handleSubmit = async event => {
     event.preventDefault();
-  
-    try {
-      await Auth.signIn(this.state.email, this.state.password);
-      this.props.userHasAuthenticated(true);
-    //   alert("Logged in");
+    try { //fetch returns a promise, when catch it no longer a promise?
+
+      this.props.toggleLoading();
+      fetch('http://localHost:8080/login', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          "username":  this.state.email,
+          "password": this.state.password
+        })
+      }).then((response) => {
+        localStorage.setItem("token",response.headers.get("Authorization"));
+        console.log("localStorage.getItem(token): ", localStorage.getItem("token"));
+        console.log("localStorage: ", localStorage);
+        if(response.status===403){
+          console.log("(login.js) incorrect credentials")
+          alert("incorrect credentials");
+        }
+        else if(response.status===200){
+          console.log("(login.js) setting authenticated to true");
+          this.props.userHasAuthenticated(true); //calls this.setState function in app.js
+          alert("Logged in");
+          this.props.toggleLoading();
+          this.setState({redirect:true});
+        }
+        else{
+          console.log("(login.js) error other than incorrect login credentials")
+        }
+      })
     } catch (e) {
       alert(e.message);
     }
   }
   
-
   render() {
     return (
       <div className="Login">
+        {this.renderRedirect()}
         <form onSubmit={this.handleSubmit}>
           <FormGroup controlId="email" bsSize="large">
             <ControlLabel>Email</ControlLabel>
