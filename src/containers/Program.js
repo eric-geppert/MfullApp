@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 import { pdfjs } from 'react-pdf';
 import SimpleMenu from "../components/SimpleMenu";
-// import handout from '../images/handout';
-// import store from '../Redux/Store/Store';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 
 class Program extends Component {
 
   renderWorkout(workout){
-    return (                                            //workout.pdfLink
+    return (
       <SimpleMenu key={workout.name} name={workout.name} file={workout.pdfLink}/>
       );
     };

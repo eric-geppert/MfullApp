@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import "./Login.css";
-// import userHasAuthenticated from '../App';
-import toggleLoading from '../App';
 import { Redirect } from 'react-router-dom'
 
 export default class Login extends Component {
@@ -35,8 +33,7 @@ export default class Login extends Component {
 
 handleSubmit = async event => {
     event.preventDefault();
-    try { //fetch returns a promise, when catch it no longer a promise?
-
+    try {
       this.props.toggleLoading();
       fetch('http://localHost:8080/login', {
         method: 'POST',

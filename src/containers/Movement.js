@@ -5,9 +5,12 @@ export default class Movement extends Component {
     return (
       <div className="Home">
         <div className="lander">
-          <h1>want to see mitchell do cool moves?</h1>
-          {/* {console.log("local in movement: " +localStorage.getItem("token"))} */}
-
+          <h1> 
+            Thank you for coming to our fitness hotline. 
+          </h1>
+          <h1>
+            If you'd like to lose a half pound right now, press "1" 18,000 times.
+          </h1>
         </div>
       </div>
     );

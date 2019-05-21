@@ -4,10 +4,7 @@
 }
 
 .goal {
-  /* padding-bottom: -1000px; */
-  /* padding: 0px 0px 1000px 0 px; */
   text-align: center;
-  /* padding-bottom: -200px; */
 }
 
 .goal h1 {
@@ -15,21 +12,3 @@
   font-weight: 10;
   margin-bottom: -50px;
 }
-
-
-/* @media all and (min-width: 480px) {
-    body {
-        /* width: 100%;
-        height: 100% */
-      /* padding: 60px 0; */
-      /* flex: 1 */
-    /* } */
-
-
-  
-    /* body form {
-      margin: 0 auto;
-      max-width: 320px;
-    } */
-  /* }
-   */

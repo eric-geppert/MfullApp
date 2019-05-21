@@ -6,9 +6,6 @@ import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
-// import store from '../Redux/Store/Store'
-// import updateSelected from '../Redux/Actions/UpdateGoal';
-// import updateGym from '../Redux/Actions/UpdateGym';
 import workouts from '../workout';
 import RadioButtonChild from './RadioButtonChild'
 
@@ -38,7 +35,7 @@ class RadioButton extends React.Component {
   };
 
   render() {
-    const { classes } = this.props; // need?
+    const { classes } = this.props;
 
     return (
       <div className={classes.root}>
