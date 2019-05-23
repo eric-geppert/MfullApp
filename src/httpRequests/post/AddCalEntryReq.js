@@ -5,7 +5,7 @@ export default function AddCalEntry(calorieState, dateState)
   console.log("calorieState: " + calorieState);
   console.log("dateState: " + dateState);
 
-  fetch('http://localHost:8080/calorie/addCalEntry', {
+  fetch('http://13.67.237.175:8080/calorie/addCalEntry', {
     method: 'POST',
     headers: {
       'Accept': 'application/json',

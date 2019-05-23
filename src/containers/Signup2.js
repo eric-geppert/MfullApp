@@ -38,7 +38,7 @@ handleSubmit = async event => {
     event.preventDefault();
     try {
       this.props.toggleLoading();
-      fetch('http://localHost:8080/api/v0/register/', {
+      fetch('http://13.67.237.175:8080/api/v0/register/', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
