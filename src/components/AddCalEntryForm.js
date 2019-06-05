@@ -25,7 +25,7 @@ export default class AddCalEntryForm extends Component {
 handleSubmit = async event => {
     event.preventDefault();
     try {
-      fetch('http://13.67.237.175:8080/calorie/addCalEntry', {
+      fetch('https://40.113.216.49:8080/calorie/addCalEntry', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',

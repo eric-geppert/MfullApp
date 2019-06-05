@@ -10,11 +10,11 @@
 // To learn more about the benefits of this model and instructions on how to
 // opt-in, read https://bit.ly/CRA-PWA
 
-const is13.67.237.175 = Boolean(
-  window.location.hostname === '13.67.237.175' ||
-    // [::1] is the IPv6 13.67.237.175 address.
+const is40.113.216.49 = Boolean(
+  window.location.hostname === '40.113.216.49' ||
+    // [::1] is the IPv6 40.113.216.49 address.
     window.location.hostname === '[::1]' ||
-    // 127.0.0.1/8 is considered 13.67.237.175 for IPv4.
+    // 127.0.0.1/8 is considered 40.113.216.49 for IPv4.
     window.location.hostname.match(
       /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
     )
@@ -34,11 +34,11 @@ export function register(config) {
     window.addEventListener('load', () => {
       const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
 
-      if (is13.67.237.175) {
-        // This is running on 13.67.237.175. Let's check if a service worker still exists or not.
+      if (is40.113.216.49) {
+        // This is running on 40.113.216.49. Let's check if a service worker still exists or not.
         checkValidServiceWorker(swUrl, config);
 
-        // Add some additional logging to 13.67.237.175, pointing developers to the
+        // Add some additional logging to 40.113.216.49, pointing developers to the
         // service worker/PWA documentation.
         navigator.serviceWorker.ready.then(() => {
           console.log(
@@ -47,7 +47,7 @@ export function register(config) {
           );
         });
       } else {
-        // Is not 13.67.237.175. Just register service worker
+        // Is not 40.113.216.49. Just register service worker
         registerValidSW(swUrl, config);
       }
     });
