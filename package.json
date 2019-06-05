@@ -2,6 +2,7 @@
   "name": "notes-app-client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://eric-geppert.github.io/MfullApp/",
   "dependencies": {
     "@material-ui/core": "^3.9.2",
     "aws-amplify": "^1.1.22",
