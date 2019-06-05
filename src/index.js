@@ -4,16 +4,18 @@ import './index.css';
 import App from './App';
 // import * as serviceWorker from './serviceWorker';
 // import { withRouter as Router } from "react-router-dom";
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter, BrowserRouter as Router } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from './Redux/Store/Store';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(
   <Provider store={store}> {/* for redux store updates (needs to be on root component) */}
-    <Router>      
+    {/* <Router>       */}
+    <HashRouter>
       <App />
-    </Router>
+    </HashRouter>
+    {/* </Router> */}
   </Provider>,
   document.getElementById("root")
 );

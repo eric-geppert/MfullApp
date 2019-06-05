@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^3.9.2",
     "aws-amplify": "^1.1.22",
+    "gh-pages": "^2.0.1",
     "material-ui": "^1.0.0-beta.47",
     "react": "^16.8.4",
     "react-bootstrap": "^0.32.4",
@@ -25,6 +26,8 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "set HTTPS=true&&react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
