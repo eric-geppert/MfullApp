@@ -31,7 +31,7 @@ export default class CalorieGraph extends React.Component {
 
   getCalsBetween = () =>{
     try {     
-      fetch('/calorie/getEntriesBetween', {port:8080}, {
+      fetch('40.113.216.49:8080/calorie/getEntriesBetween', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
