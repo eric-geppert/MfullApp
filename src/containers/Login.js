@@ -36,6 +36,8 @@ handleSubmit = async event => {
     try {
       this.props.toggleLoading();
       fetch('40.113.216.49:8080/login', {
+        //dont need to specify https since its sending a req from and https site
+        //will automatically prepend it (testing this theory)
         method: 'POST',
         headers: {
           'Accept': 'application/json',
