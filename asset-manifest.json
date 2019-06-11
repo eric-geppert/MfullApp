@@ -1,14 +1,14 @@
 {
-  "main.css": "/MfullApp/static/css/main.4f664ccc.chunk.css",
-  "main.js": "/MfullApp/static/js/main.6583b78d.chunk.js",
-  "main.js.map": "/MfullApp/static/js/main.6583b78d.chunk.js.map",
+  "main.css": "/MfullApp/static/css/main.87739e08.chunk.css",
+  "main.js": "/MfullApp/static/js/main.cb00e692.chunk.js",
+  "main.js.map": "/MfullApp/static/js/main.cb00e692.chunk.js.map",
   "runtime~main.js": "/MfullApp/static/js/runtime~main.0778b6cc.js",
   "runtime~main.js.map": "/MfullApp/static/js/runtime~main.0778b6cc.js.map",
   "static/js/2.6eb0d025.chunk.js": "/MfullApp/static/js/2.6eb0d025.chunk.js",
   "static/js/2.6eb0d025.chunk.js.map": "/MfullApp/static/js/2.6eb0d025.chunk.js.map",
   "index.html": "/MfullApp/index.html",
-  "precache-manifest.f195b2c32edcbb7ebb3d78fb49651b76.js": "/MfullApp/precache-manifest.f195b2c32edcbb7ebb3d78fb49651b76.js",
+  "precache-manifest.ec4506aea1576a87a49acdd75230360d.js": "/MfullApp/precache-manifest.ec4506aea1576a87a49acdd75230360d.js",
   "service-worker.js": "/MfullApp/service-worker.js",
-  "static/css/main.4f664ccc.chunk.css.map": "/MfullApp/static/css/main.4f664ccc.chunk.css.map",
+  "static/css/main.87739e08.chunk.css.map": "/MfullApp/static/css/main.87739e08.chunk.css.map",
   "static/media/handout.pdf": "/MfullApp/static/media/handout.c40ebb97.pdf"
 }
