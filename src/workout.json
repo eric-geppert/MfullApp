@@ -1,0 +1,260 @@
+[
+    {
+      "name": "work1",
+      "goal": "gain",
+      "gym": "crossfit",
+      "days": "3",
+      "skill": "beginner",
+      "pdfLink": "./images/handout"
+    },
+    {
+        "name": "work2",
+        "goal": "lose",
+        "gym": "crossfit",
+        "days": "3",
+        "skill": "beginner",
+        "pdfLink": "./images/handout"
+    },
+    {
+        "name": "work3",
+        "goal": "maintain",
+        "gym": "crossfit",
+        "days": "3",
+        "skill": "beginner",
+        "pdfLink": "./images/handout"
+
+    },
+    {
+        "name": "work4",
+        "goal": "gain",
+        "gym": "weightlifting",
+        "days": "4",
+        "skill": "beginner",
+        "pdfLink": "/images/handout"
+
+    },
+    {
+        "name": "work5",
+        "goal": "gain",
+        "gym": "weightlifting",
+        "days": "4",
+        "skill": "advanced",
+        "pdfLink": "/images/handout"
+
+    },
+
+
+    {
+        "name": "work6",
+        "goal": "gain",
+        "gym": "crossfit",
+        "days": "3",
+        "skill": "beginner",
+        "pdfLink": "./images/handout"
+      },
+      {
+          "name": "work7",
+          "goal": "maintain",
+          "gym": "crossfit",
+          "days": "3",
+          "skill": "beginner",
+          "pdfLink": "./images/handout"
+  
+      },
+      {
+          "name": "work8",
+          "goal": "gain",
+          "gym": "weightlifting",
+          "days": "4",
+          "skill": "beginner",
+          "pdfLink": "/images/handout"
+  
+      },
+      {
+          "name": "work9",
+          "goal": "gain",
+          "gym": "weightlifting",
+          "days": "4",
+          "skill": "advanced",
+          "pdfLink": "/images/handout"
+  
+      },
+      {
+        "name": "work10",
+        "goal": "lose",
+        "gym": "crossfit",
+        "days": "3",
+        "skill": "beginner",
+        "pdfLink": "./images/handout"
+    },
+    {
+        "name": "work11",
+        "goal": "gain",
+        "gym": "crossfit",
+        "days": "3",
+        "skill": "beginner",
+        "pdfLink": "./images/handout"
+      },
+      {
+          "name": "work12",
+          "goal": "lose",
+          "gym": "crossfit",
+          "days": "3",
+          "skill": "beginner",
+          "pdfLink": "./images/handout"
+      },
+      {
+          "name": "work13",
+          "goal": "maintain",
+          "gym": "crossfit",
+          "days": "3",
+          "skill": "beginner",
+          "pdfLink": "./images/handout"
+  
+      },
+      {
+          "name": "work14",
+          "goal": "gain",
+          "gym": "weightlifting",
+          "days": "4",
+          "skill": "beginner",
+          "pdfLink": "/images/handout"
+  
+      },
+      {
+          "name": "work15",
+          "goal": "gain",
+          "gym": "weightlifting",
+          "days": "4",
+          "skill": "advanced",
+          "pdfLink": "/images/handout"
+  
+      },
+      {
+          "name": "work16",
+          "goal": "gain",
+          "gym": "crossfit",
+          "days": "3",
+          "skill": "beginner",
+          "pdfLink": "./images/handout"
+        },
+        {
+            "name": "work17",
+            "goal": "maintain",
+            "gym": "crossfit",
+            "days": "3",
+            "skill": "beginner",
+            "pdfLink": "./images/handout"
+    
+        },
+        {
+            "name": "work18",
+            "goal": "gain",
+            "gym": "weightlifting",
+            "days": "4",
+            "skill": "beginner",
+            "pdfLink": "/images/handout"
+    
+        },
+        {
+            "name": "work19",
+            "goal": "gain",
+            "gym": "weightlifting",
+            "days": "4",
+            "skill": "advanced",
+            "pdfLink": "/images/handout"
+    
+        },
+        {
+          "name": "work20",
+          "goal": "lose",
+          "gym": "crossfit",
+          "days": "3",
+          "skill": "beginner",
+          "pdfLink": "./images/handout"
+        },
+        {
+            "name": "work21",
+            "goal": "gain",
+            "gym": "crossfit",
+            "days": "3",
+            "skill": "beginner",
+            "pdfLink": "./images/handout"
+          },
+          {
+              "name": "work22",
+              "goal": "lose",
+              "gym": "crossfit",
+              "days": "3",
+              "skill": "beginner",
+              "pdfLink": "./images/handout"
+          },
+          {
+              "name": "work23",
+              "goal": "maintain",
+              "gym": "crossfit",
+              "days": "3",
+              "skill": "beginner",
+              "pdfLink": "./images/handout"
+      
+          },
+          {
+              "name": "work24",
+              "goal": "gain",
+              "gym": "weightlifting",
+              "days": "4",
+              "skill": "beginner",
+              "pdfLink": "/images/handout"
+      
+          },
+          {
+              "name": "work25",
+              "goal": "gain",
+              "gym": "weightlifting",
+              "days": "4",
+              "skill": "advanced",
+              "pdfLink": "/images/handout"
+      
+          },
+          {
+              "name": "work26",
+              "goal": "gain",
+              "gym": "crossfit",
+              "days": "3",
+              "skill": "beginner",
+              "pdfLink": "./images/handout"
+            },
+            {
+                "name": "work27",
+                "goal": "maintain",
+                "gym": "crossfit",
+                "days": "3",
+                "skill": "beginner",
+                "pdfLink": "./images/handout"
+            },
+            {
+                "name": "work28",
+                "goal": "gain",
+                "gym": "weightlifting",
+                "days": "4",
+                "skill": "beginner",
+                "pdfLink": "/images/handout"
+    
+            },
+            {
+                "name": "work29",
+                "goal": "gain",
+                "gym": "weightlifting",
+                "days": "4",
+                "skill": "advanced",
+                "pdfLink": "/images/handout"
+            },
+            {
+              "name": "work30",
+              "goal": "lose",
+              "gym": "crossfit",
+              "days": "3",
+              "skill": "beginner",
+              "pdfLink": "./images/handout"
+          }
+]

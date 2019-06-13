@@ -1,0 +1,47 @@
+{
+  "name": "notes-app-client",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://eric-geppert.github.io/MfullApp/",
+  "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "aws-amplify": "^1.1.22",
+    "gh-pages": "^2.0.1",
+    "material-ui": "^1.0.0-beta.47",
+    "react": "^16.8.4",
+    "react-bootstrap": "^0.32.4",
+    "react-bootstrap-button-loader": "^1.0.12",
+    "react-bootstrap-buttons": "^0.3.0",
+    "react-dom": "^16.8.4",
+    "react-easy-chart": "^1.0.0",
+    "react-native": "^0.59.9",
+    "react-pdf": "^4.0.5",
+    "react-redux": "^6.0.1",
+    "react-router-bootstrap": "^0.24.4",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.8",
+    "react-vis": "^1.11.7",
+    "reactstrap": "^7.1.0",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "set HTTPS=true&&react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postinstall": "cp node_modules/pdfjs-dist/build/pdf.worker.min.js public/pdf.worker.min.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

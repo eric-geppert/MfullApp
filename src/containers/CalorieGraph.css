@@ -1,0 +1,14 @@
+.rv-xy-plot__grid-lines__line {
+  stroke: gray;
+  stroke-width: 1;
+}
+
+.goal {
+  text-align: center;
+}
+
+.goal h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 10;
+  margin-bottom: -50px;
+}
