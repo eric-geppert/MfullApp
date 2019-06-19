@@ -1,9 +1,22 @@
 import React, { Component, Fragment } from "react";
+// import ImageBackground from 'react';
 import { Link } from "react-router-dom";
 import { Nav, Navbar, NavItem } from "react-bootstrap";
+//bootstrap doesn't have a Container component, LIES!
 import Routes from "./Routes";
 import { LinkContainer } from "react-router-bootstrap";
 import "./App.css";
+// import findMyWorkoutPlan from './images/findMyWorkoutPlan.PNG';
+
+// const backGroundStyle={
+//   // ImageBackground: url(${findMyWorkoutPlan});
+//   width: "100%",
+//   height: "100%",
+//   // height: "100px",
+//   backGroundStyle: red
+//   // color: red
+//   // backgroundImage: "url(" + findMyWorkoutPlan + ")"
+// }
 
 class App extends Component {
   constructor(props) {
@@ -39,16 +52,21 @@ class App extends Component {
     };
     
     return (
-        <div className="app top">
-        <Navbar fluid collapseOnSelect>
+      // style={backGroundStyle}
+      <div className="app top" >
+
+        {/* className="justify-content-center" activeKey=" */}
+        {/* <Container> */}
+        <Navbar>
+          {/* fluid collapseOnSelect */}
           <Navbar.Header>
             <Navbar.Brand>
               <Link to="/">Homepage</Link>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
-          <Navbar.Collapse>
-            <Nav pullRight> 
+          {/* <Navbar.Collapse> */}
+            <Nav> 
             {this.state.isAuthenticated
               ? 
                 <Fragment>
@@ -81,8 +99,9 @@ class App extends Component {
                 </Fragment>
             }
             </Nav>
-          </Navbar.Collapse>
+          {/* </Navbar.Collapse> */}
         </Navbar>
+        {/* </Container> */}
         <Routes childProps={childProps} />
       </div>
     );

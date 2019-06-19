@@ -7,10 +7,18 @@ import App from './App';
 import { HashRouter, BrowserRouter as Router } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from './Redux/Store/Store';
+import findMyWorkoutPlan from './images/findMyWorkoutPlan.PNG';
 
+const backGroundStyle={
+  // ImageBackground: url(${findMyWorkoutPlan});
+  width: "100%",
+  // height: "100%",
+  height: "1000px",
+  backgroundImage: "url(" + findMyWorkoutPlan + ")"
+}
 // ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(
-  <Provider store={store}> {/* for redux store updates (needs to be on root component) */}
+  <Provider store={store} style={backGroundStyle}> {/* for redux store updates (needs to be on root component) */}
     {/* <Router>       */}
     <HashRouter>
       <App />
