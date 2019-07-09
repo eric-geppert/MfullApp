@@ -4,6 +4,12 @@ import SimpleMenu from "../components/SimpleMenu";
 // import { View, ListView, StyleSheet, Text } from 'react-native';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
+
+// const buttonStyle={
+  
+//   width: "100px"
+// }
+
 class Program extends Component {
 
   // constructor(props){
@@ -14,10 +20,10 @@ class Program extends Component {
     // };
   // }
   
-
   renderWorkout(workout){
     return (
-      <SimpleMenu key={workout.name} name={workout.name} file={workout.pdfLink}/>
+      //style={buttonStyle}
+      <SimpleMenu test={workout.name} key={workout.name} name={workout.name} file={workout.pdfLink} />
       );
     };
   
@@ -34,7 +40,7 @@ class Program extends Component {
     }
     
     return (
-      <div>
+      <div >
         {programWorkouts.map(workout => {
             return this.renderWorkout(workout)
           })}
