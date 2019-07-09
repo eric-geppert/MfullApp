@@ -12,7 +12,7 @@ export default class Home extends Component {
                 style={{
                   flex: 1,
                   alignSelf: 'stretch',
-                  width: "50%",
+                  width: "40%",
                   height: undefined,
                 }}
                 src={require('../images/findMyWorkoutPlan.PNG')}

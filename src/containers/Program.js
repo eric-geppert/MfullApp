@@ -23,7 +23,7 @@ class Program extends Component {
   renderWorkout(workout){
     return (
       //style={buttonStyle}
-      <SimpleMenu test={workout.name} key={workout.name} name={workout.name} file={workout.pdfLink} />
+      <SimpleMenu test={workout.name} pages={workout.pages} key={workout.name} name={workout.name} file={workout.pdfLink} />
       );
     };
   
