@@ -76,7 +76,7 @@ class App extends Component {
                   <LinkContainer to="/calorie">
                     <NavItem>Calorie Tracker</NavItem>
                   </LinkContainer>
-                  <LinkContainer to="/RadioButton">
+                  <LinkContainer to="/FindMyProgram">
                     <NavItem>Find my Program</NavItem>
                   </LinkContainer>
                   <LinkContainer to="/Movement">

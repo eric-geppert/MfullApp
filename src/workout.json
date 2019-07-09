@@ -2,7 +2,7 @@
     {
       "name": "Conditioning Weight Loss 5 days a week Version 1",
       "goal": "gain",
-      "gym": "crossfit",
+      "gym": "ConditioningWeightLoss",
       "days": "5",
       "skill": "beginner",
       "pdfLink": "../images/workouts/ConditioningWeightLoss5V1.pdf"
@@ -10,7 +10,7 @@
     {
       "name": "Conditioning Weight Loss 4 days a week Version 1",
       "goal": "gain",
-      "gym": "crossfit",
+      "gym": "ConditioningWeightLoss",
       "days": "4",
       "skill": "beginner",
       "pdfLink": "../images/workouts/ConditioningWeightLoss4V1.pdf"
@@ -18,7 +18,7 @@
     {
       "name": "Conditioning Weight Loss 3 days a week Version 1",
       "goal": "gain",
-      "gym": "crossfit",
+      "gym": "ConditioningWeightLoss",
       "days": "3",
       "skill": "beginner",
       "pdfLink": "../images/workouts/ConditioningWeightLoss3V1.pdf"
@@ -26,7 +26,7 @@
     {
       "name": "At Home Total Body 5 days a week Version 1",
       "goal": "gain",
-      "gym": "crossfit",
+      "gym": "AtHomeTotalBody",
       "days": "5",
       "skill": "beginner",
       "pdfLink": "../images/workouts/AtHomeTotalBody5V1.pdf"
@@ -34,7 +34,7 @@
     {
       "name": "At Home Total Body 4 days a week Version 1",
       "goal": "gain",
-      "gym": "crossfit",
+      "gym": "AtHomeTotalBody",
       "days": "4",
       "skill": "beginner",
       "pdfLink": "../images/workouts/AtHomeTotalBody4V1.pdf"
@@ -42,7 +42,7 @@
     {
       "name": "At Home Total Body 3 days a week Version 1",
       "goal": "gain",
-      "gym": "crossfit",
+      "gym": "AtHomeTotalBody",
       "days": "3",
       "skill": "beginner",
       "pdfLink": "../images/workouts/AtHomeTotalBody3V1.pdf"

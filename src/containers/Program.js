@@ -29,14 +29,14 @@ class Program extends Component {
   
   render() {
     var programWorkouts;
-    if(typeof this.props.skill==="undefined"){
+    if(typeof this.props.days==="undefined"){
       console.log("program.js: props undefined")
     }
-    else if(this.props.skill==="all")
-      programWorkouts=this.props.skillList;
+    else if(this.props.days==="all")
+      programWorkouts=this.props.dayList;
     else{
-      programWorkouts= this.props.skillList.filter(workout => 
-        (this.props.skill===workout.skill));
+      programWorkouts= this.props.dayList.filter(workout => 
+        (this.props.days===workout.days));
     }
     
     return (

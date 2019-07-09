@@ -7,7 +7,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import workouts from '../workout';
-import RadioDays from './RadioDays';
+import GymFilter from './DaysFilter';
 
 const styles = theme => ({
   root: {
@@ -25,7 +25,8 @@ class RadioButtonChild extends React.Component {
   constructor(props) {
     super();
     this.state = {
-        gym: 'all'
+        gym: 'all',
+        filteredWorkouts: workouts,
     }; 
 }
 
@@ -37,8 +38,8 @@ class RadioButtonChild extends React.Component {
   render() {
     const { classes } = this.props;
     //child filters partent (goals)
-    let temp=workouts.filter(workout =>(this.props.goal===workout.goal)||(this.props.goal==="all"));
-    var filteredWorkouts=temp;
+    // let temp=workouts.filter(workout =>(this.props.goal===workout.goal)||(this.props.goal==="all"));
+    // var filteredWorkouts=temp;
 
     return (
       <div className={classes.root}>
@@ -52,14 +53,14 @@ class RadioButtonChild extends React.Component {
               defaultValue="all"
             >
               <FormControlLabel 
-                value="crossfit"
+                value="AtHomeTotalBody"
                 control={<Radio color="primary" />} 
-                label="crossfit" 
+                label="AtHomeTotalBody" 
               />
               <FormControlLabel 
-                value="weightlifting" 
+                value="ConditioningWeightLoss" 
                 control={<Radio color="primary" />} 
-                label="weightlifting" 
+                label="ConditioningWeightLoss" 
               />
               <FormControlLabel
                 value="notCrossfit" 
@@ -75,7 +76,7 @@ class RadioButtonChild extends React.Component {
           </FormControl>
         </div>
         <div className={"Program"}>
-           <RadioDays filteredWorkoutList={filteredWorkouts} gym={this.state.gym}/>
+           <GymFilter filteredWorkoutList={this.state.filteredWorkouts} gym={this.state.gym}/>
         </div>
       </div>
     );
