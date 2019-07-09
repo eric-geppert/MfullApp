@@ -1,50 +1,74 @@
 [
     {
       "name": "Conditioning Weight Loss 5 days a week Version 1",
-      "goal": "gain",
       "gym": "ConditioningWeightLoss",
       "days": "5",
-      "skill": "beginner",
       "pdfLink": "../images/workouts/ConditioningWeightLoss5V1.pdf"
     },
     {
       "name": "Conditioning Weight Loss 4 days a week Version 1",
-      "goal": "gain",
       "gym": "ConditioningWeightLoss",
       "days": "4",
-      "skill": "beginner",
       "pdfLink": "../images/workouts/ConditioningWeightLoss4V1.pdf"
     },
     {
       "name": "Conditioning Weight Loss 3 days a week Version 1",
-      "goal": "gain",
       "gym": "ConditioningWeightLoss",
       "days": "3",
-      "skill": "beginner",
       "pdfLink": "../images/workouts/ConditioningWeightLoss3V1.pdf"
     },
     {
       "name": "At Home Total Body 5 days a week Version 1",
-      "goal": "gain",
       "gym": "AtHomeTotalBody",
       "days": "5",
-      "skill": "beginner",
       "pdfLink": "../images/workouts/AtHomeTotalBody5V1.pdf"
     },
     {
       "name": "At Home Total Body 4 days a week Version 1",
-      "goal": "gain",
       "gym": "AtHomeTotalBody",
       "days": "4",
-      "skill": "beginner",
       "pdfLink": "../images/workouts/AtHomeTotalBody4V1.pdf"
     },
     {
       "name": "At Home Total Body 3 days a week Version 1",
-      "goal": "gain",
       "gym": "AtHomeTotalBody",
       "days": "3",
-      "skill": "beginner",
       "pdfLink": "../images/workouts/AtHomeTotalBody3V1.pdf"
+    },
+    {
+      "name": "Functional Fitness HIIT - 5 Days a Week - Version 1",
+      "gym": "FunctionalFitnessHIIT",
+      "days": "5",
+      "pdfLink": "../images/workouts/FunctionalFitnessHIIT5V1.pdf"
+    },
+    {
+      "name": "Functional Fitness HIIT - 4 Days a Week - Version 1",
+      "gym": "FunctionalFitnessHIIT",
+      "days": "4",
+      "pdfLink": "../images/workouts/FunctionalFitnessHIIT4V1.pdf"
+    },
+    {
+      "name": "Functional Fitness HIIT - 3 Days a Week - Version 1",
+      "gym": "FunctionalFitnessHIIT",
+      "days": "3",
+      "pdfLink": "../images/workouts/FunctionalFitnessHIIT3V1.pdf"
+    },
+    {
+      "name": "Total Body Transformation - 5 days a week - Version 1",
+      "gym": "TotalBodyTransformation",
+      "days": "5",
+      "pdfLink": "../images/workouts/TotalBodyTransformation5V1.pdf"
+    },
+    {
+      "name": "Total Body Transformation - 4 days a week - Version 1",
+      "gym": "TotalBodyTransformation",
+      "days": "4",
+      "pdfLink": "../images/workouts/TotalBodyTransformation4V1.pdf"
+    },
+    {
+      "name": "Total Body Transformation - 3 days a week - Version 1",
+      "gym": "TotalBodyTransformation",
+      "days": "3",
+      "pdfLink": "../images/workouts/TotalBodyTransformation3V1.pdf"
     }
 ]

@@ -28,8 +28,32 @@ class MyPDFDocument extends Component {
                 return(
                     require("../images/workouts/AtHomeTotalBody3V1.pdf")
                 );
+            case("../images/workouts/FunctionalFitnessHIIT5V1.pdf"):
+                return(
+                    require("../images/workouts/FunctionalFitnessHIIT5V1.pdf")
+                );
+            case("../images/workouts/FunctionalFitnessHIIT4V1.pdf"):
+                return(
+                    require("../images/workouts/FunctionalFitnessHIIT4V1.pdf")
+                );
+            case("../images/workouts/FunctionalFitnessHIIT3V1.pdf"):
+                return(
+                    require("../images/workouts/FunctionalFitnessHIIT3V1.pdf")
+                );
+            case("../images/workouts/TotalBodyTransformation5V1.pdf"):
+                return(
+                    require("../images/workouts/TotalBodyTransformation5V1.pdf")
+                );
+            case("../images/workouts/TotalBodyTransformation4V1.pdf"):
+                return(
+                    require("../images/workouts/TotalBodyTransformation4V1.pdf")
+                );
+            case("../images/workouts/TotalBodyTransformation3V1.pdf"):
+                return(
+                    require("../images/workouts/TotalBodyTransformation3V1.pdf")
+                );
             default:
-                console.log("workout Not found");
+                console.log("workout Not found in PDFdocument switch statement");
         }
     }
 
@@ -37,7 +61,7 @@ class MyPDFDocument extends Component {
         return(
             // file={require("../images/handout.pdf")}
             <Document file={this.rednerWorkout(this.props.file)}>
-                <Page pageNumber={1}
+                <Page pageNumber={1} //how do this dynamically?
                 onLoadError={console.error}
                 />
           </Document>

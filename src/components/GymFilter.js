@@ -55,17 +55,22 @@ class RadioButtonChild extends React.Component {
               <FormControlLabel 
                 value="AtHomeTotalBody"
                 control={<Radio color="primary" />} 
-                label="AtHomeTotalBody" 
+                label="At Home Total Body" 
               />
               <FormControlLabel 
                 value="ConditioningWeightLoss" 
                 control={<Radio color="primary" />} 
-                label="ConditioningWeightLoss" 
+                label="Conditioning Weight Loss" 
               />
               <FormControlLabel
-                value="notCrossfit" 
+                value="FunctionalFitnessHIIT" 
                 control={<Radio color="primary" />} 
-                label="notCrossfit" 
+                label="Functional Fitness HIIT" 
+              />
+              <FormControlLabel
+                value="TotalBodyTransformation" 
+                control={<Radio color="primary" />} 
+                label="Total Body Transformation" 
               />
               <FormControlLabel
                 value="all" 
