@@ -57,7 +57,7 @@ class App extends Component {
 
         {/* className="justify-content-center" activeKey=" */}
         {/* <Container> */}
-        <Navbar pullRight>
+        <Navbar>
           {/* fluid collapseOnSelect */}
           <Navbar.Header>
             <Navbar.Brand>
