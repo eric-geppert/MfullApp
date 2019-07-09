@@ -53,11 +53,11 @@ class App extends Component {
     
     return (
       // style={backGroundStyle}
-      <div className="app top" >
+      <div className="app-top" >
 
         {/* className="justify-content-center" activeKey=" */}
         {/* <Container> */}
-        <Navbar>
+        <Navbar pullRight>
           {/* fluid collapseOnSelect */}
           <Navbar.Header>
             <Navbar.Brand>
