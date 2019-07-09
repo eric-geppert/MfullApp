@@ -49,7 +49,7 @@ class SimpleMenu extends React.Component {
           open={Boolean(anchorEl)}
           onClose={this.handleClose}
         >
-        <MyPDFDocument testKey={this.props.test} file={this.props.file}/>
+        <MyPDFDocument pages={this.props.pages} testKey={this.props.test} file={this.props.file}/>
         </Menu>
       </div>
     );

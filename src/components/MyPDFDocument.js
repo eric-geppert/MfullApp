@@ -57,16 +57,25 @@ class MyPDFDocument extends Component {
         }
     }
 
+    renderPage(){
+        var pageElements = [];
+        for(var i =1;i< this.props.pages;i++)
+            pageElements.push(<Page key={i} pageNumber={i} onLoadError={console.error}/>)
+        return(pageElements);
+        
+    }
+
     render(){
+        var totalPages=5;
         return(
-            // file={require("../images/handout.pdf")}
             <Document file={this.rednerWorkout(this.props.file)}>
-                <Page pageNumber={1} //how do this dynamically?
-                onLoadError={console.error}
-                />
+                {this.renderPage()}
           </Document>
         );
     }
 }
 
 export default MyPDFDocument;
+
+//if have problems with pages out of order visit link later
+//https://stackoverflow.com/questions/16480469/how-to-display-whole-pdf-not-only-one-page-with-pdf-js
