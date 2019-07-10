@@ -17,17 +17,25 @@ export default class Home extends Component {
             I have lost 30lbs and about 10% body fat, which has been amazing because those were 
             the two things I cared the most about losing. He goes out of his way to help you 
             reach your goals and he's always motivating you to go past your goals and set new ones!”
-            -Aaidan Hebert
             </p>
+            <p style={{textAlign: "right"}}>-Aaidan Hebert</p>
             <p style={{paddingTop:"50px"}}>
               “I was able to dramatically improve my cardio while getting stronger. It’s a great 
               experience...if you do everything you are supposed to, you will get results.”
-              -Chase Dolfi
             </p>
+            <p style={{textAlign: "right"}}>-Chase Dolfi</p>
             <p style={{paddingTop:"50px"}}>
               “Mitch is an excellent coach and will put in time for any questions you might have. 
-              He knows what he is talking about and will help you produce.” -Colton Taylor
+              He knows what he is talking about and will help you produce.”
             </p>
+            <p style={{textAlign: "right"}}>-Colton Taylor</p>
+            <p style={{paddingTop:"50px"}}>
+            “I've learned many exercises that engage muscle groups I previously did not know how to work; 
+            and with Mitch's help I continue to learn how to improve my nutrition in order to increase 
+            strength, recover quickly after workouts, and enhance my overall health. Mitch has helped me
+             work towards many of my personal goals.” 
+            </p>
+            <p style={{textAlign: "right"}}>-Katya Cope</p>
           </div>
 
         </div>

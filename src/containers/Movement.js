@@ -1,16 +1,22 @@
 import React, { Component } from "react";
+import { Player } from 'video-react';
 
+    
+ 
 export default class Movement extends Component {
   render() {
     return (
       <div className="Home">
         <div className="lander">
           <h1> 
-            Thank you for coming to our fitness hotline. 
+            Movement Library
           </h1>
-          <h1>
-            If you'd like to lose a half pound right now, press "1" 18,000 times.
-          </h1>
+          <Player
+            playsInline
+            poster="/assets/poster.png"
+            src="https://youtu.be/yP7k8eGvymA"
+            // src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+          />
         </div>
       </div>
     );

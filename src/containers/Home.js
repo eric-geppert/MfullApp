@@ -10,12 +10,16 @@ export default class Home extends Component {
           <div className="pic">
             <img
                 style={{
-                  flex: 1,
-                  alignSelf: 'stretch',
+                  // flex: 1, //does nothing
+                  // alignSelf: 'stretch',
                   width: "40%",
-                  height: undefined,
+                  marginTop: "-10%",
+                  marginBottom: "-10%"
+                  // height: undefined,
                 }}
-                src={require('../images/findMyWorkoutPlan.PNG')}
+                src={require('../images/blackLogo.png')}
+
+                // src={require('../images/findMyWorkoutPlan.PNG')}
               />
             </div>
           {/* <div className="info"> */}
