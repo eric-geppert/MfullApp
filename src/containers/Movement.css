@@ -1,0 +1,7 @@
+
+
+.boxRow{
+    flex: 1;
+    flex-direction: row-reverse;
+    flex-flow: row;
+}

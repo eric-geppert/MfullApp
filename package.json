@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://eric-geppert.github.io/MfullApp/",
   "dependencies": {
+    "@babel/runtime": "^7.5.4",
     "@material-ui/core": "^3.9.2",
     "aws-amplify": "^1.1.22",
     "gh-pages": "^2.0.1",
