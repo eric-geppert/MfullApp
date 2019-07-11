@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import './Movement.css';
 // import { Player } from 'video-react';
-// import Container from 'react-bootstrap/dist/react-bootstrap'
+import Container from 'react-bootstrap/'
 // import Row from 'react-bootstrap/lib/Row'
 // import Col from 'react-bootstrap/lib/Col'
 // import TabContainer from 'react-bootstrap/lib/TabContainer'
 // import { Table } from "material-ui";
-// import { Grid } from "material-ui";
 
 const pStyle={
   fontWeight:"bold",
@@ -22,14 +21,43 @@ const headerStyle={
 export default class Movement extends Component {
   render() {
     return (
-      // <div className="Home" >
       <div>
         <div>
           <h1 style={headerStyle}> 
             Movement Library
           </h1>
         </div>
-        {/* <div style={{gridRow: }}> */}
+            <div className= "container-of-boxes">
+              <div id="seated db bench">
+                <iframe src='https://www.youtube.com/embed/VoA-Hhd5e1U' //have to use embed instead of watch
+                  frameBorder='0'
+                  allow='autoplay; encrypted-media'
+                  allowFullScreen
+                  title='video'
+                  // name="Seated Dumbell BenchPress"
+                />
+                <p style={pStyle}>
+                  Seated Dumbell BenchPress
+                </p>
+              </div>
+              <div id="db bench">
+                <iframe src='https://www.youtube.com/embed/O-zZAKgj0JY'
+                  frameBorder='0'
+                  allow='autoplay; encrypted-media'
+                  allowFullScreen
+                  title='video'
+                />
+                <p style={pStyle}>
+                  Dumbell BenchPress
+                </p> 
+              </div>
+            </div>
+      </div>
+    );
+  }
+}
+
+{/* <div style={{gridRow: }}> */}
         {/* <Grid></Grid> */}
         {/* <Table></Table>
         <TableRow></TableRow> */}
@@ -41,34 +69,11 @@ export default class Movement extends Component {
             {/* <Col> */}
             {/* className="boxRow" */}
             {/* <div style={{flexDirection:"row"}} > */}
-            <view className= "boxRow">
-              <iframe src='https://www.youtube.com/embed/VoA-Hhd5e1U' //have to use embed instead of watch
-                frameBorder='0'
-                allow='autoplay; encrypted-media'
-                allowFullScreen
-                title='video'
-              />
-              <p style={pStyle}>
-                Seated Dumbell BenchPress
-              </p>
-              <iframe src='https://www.youtube.com/embed/O-zZAKgj0JY'
-                frameBorder='0'
-                allow='autoplay; encrypted-media'
-                allowFullScreen
-                title='video'
-              />
-              <p style={pStyle}>
-                Dumbell BenchPress
-              </p> 
-            </view>
+
             {/* </Col> */}
           {/* </Row> */}
         {/* </Grid> */}
         {/* </div>    */}
-      </div>
-    );
-  }
-}
 
 
 {/* can add width and height to make bigger (make %'s) */}
