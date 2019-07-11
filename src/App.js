@@ -59,22 +59,31 @@ class App extends Component {
         {/* <Container> */}
         <Navbar>
           {/* fluid collapseOnSelect */}
-          <Navbar.Header>
+          {/* <Navbar.Header>
             <Navbar.Brand>
               <Link to="/">Homepage</Link>
             </Navbar.Brand>
             <Navbar.Toggle />
-          </Navbar.Header>
+          </Navbar.Header> */}
           {/* <Navbar.Collapse> */}
             <Nav> 
             {this.state.isAuthenticated
               ? 
                 <Fragment>
+                  <LinkContainer to="/">
+                    <NavItem>Homepage</NavItem>
+                  </LinkContainer>
                   <LinkContainer to="/calorieGraphParent">
                     <NavItem>Calorie Graph</NavItem>
                   </LinkContainer>
                   <LinkContainer to="/calorie">
                     <NavItem>Calorie Tracker</NavItem>
+                  </LinkContainer>
+                  <LinkContainer to="/ContactUs">
+                    <NavItem>Contact Us</NavItem>
+                  </LinkContainer>
+                  <LinkContainer to="/PersonalizedProgramming">
+                    <NavItem>Personalized Programming</NavItem>
                   </LinkContainer>
                   <LinkContainer to="/FindMyProgram">
                     <NavItem>Find my Program</NavItem>

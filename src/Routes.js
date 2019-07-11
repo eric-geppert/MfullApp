@@ -10,11 +10,15 @@ import RadioButtonChild from './components/GymFilter';
 import Signup from './containers/Signup2'; //gets Signup2 dont forget
 import CalorieTracker from './containers/CalorieTracker';
 import CalorieGraphParent from './components/CalorieGraphParent';
+import ContactUs from './containers/ContactUs';
+import PersonalizedProgramming from './containers/PersonalizedProgramming';
 
 export default ({ childProps }) =>
   <Switch>
     <AppliedRoute path="/" exact component={Home} props={childProps} />
     <AppliedRoute path="/login" exact component={Login} props={childProps} />
+    <AppliedRoute path="/PersonalizedProgramming" exact component={PersonalizedProgramming} props={childProps} />
+    <AppliedRoute path="/ContactUs" exact component={ContactUs} props={childProps} />
     <AppliedRoute path="/calorie" exact component={CalorieTracker} props={childProps} />
     <AppliedRoute path="/CalorieGraphParent" exact component={CalorieGraphParent} props={childProps} />
     <AppliedRoute path="/Signup" exact component={Signup} props={childProps} /> 
