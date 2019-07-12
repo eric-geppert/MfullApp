@@ -60,9 +60,12 @@ export default class Home extends Component {
               </p>
               <p style={{textAlign: "right"}}>-Colton Taylor</p>
             </div>
-            {/* <img
-              src={require('../images/testimonials/Colton.jpg')}
-            /> */}
+            <div>
+              <img
+                src={require('../images/testimonials/Colton2.jpg')}
+              />
+            </div>
+            
             {/* need to shrink Coltons img before I can use it here */}
           </div>
         </div>

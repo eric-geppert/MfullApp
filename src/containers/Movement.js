@@ -51,11 +51,23 @@ export default class Movement extends Component {
                   Dumbell BenchPress
                 </p> 
               </div>
+              <div id="thruster">
+                <iframe src='https://www.youtube.com/embed/yP7k8eGvymA'
+                  frameBorder='0'
+                  allow='autoplay; encrypted-media'
+                  allowFullScreen
+                  title='video'
+                />
+                <p style={pStyle}>
+                  Thruster
+                </p> 
+              </div>
             </div>
       </div>
     );
   }
 }
+
 
 {/* <div style={{gridRow: }}> */}
         {/* <Grid></Grid> */}
