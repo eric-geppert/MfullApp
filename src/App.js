@@ -54,9 +54,16 @@ class App extends Component {
     return (
       // style={backGroundStyle}
       <div className="app-top" >
-
         {/* className="justify-content-center" activeKey=" */}
         {/* <Container> */}
+        <img
+          style={{
+            width: "40%",
+            marginTop: "-16%",
+            marginBottom: "-10%"
+          }}
+          src={require('./images/blackLogo.png')}
+        />
         <Navbar>
           {/* fluid collapseOnSelect */}
           {/* <Navbar.Header>
@@ -118,7 +125,5 @@ class App extends Component {
       </div>
     );
   }  
-  
 }
-
 export default App;
