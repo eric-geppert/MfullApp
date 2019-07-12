@@ -1,5 +1,10 @@
 import React, { Component } from "react";
+import { LinkContainer } from "react-router-bootstrap";
+// import { Nav, Navbar, NavItem } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 import "./Home.css";
+import { Button } from "@material-ui/core";
 
 export default class Home extends Component {
   
@@ -27,23 +32,14 @@ export default class Home extends Component {
             <p>Everyone needs a plan in gym. </p>
             <p> Reach your fitness goals with our workout plan database that has plans for all people of all fitness levels </p>
           {/* </div> */}
+          <Button>
+            <Link to="/FindMyProgram">FIND A PLAN</Link>
+          </Button>
+          {/* <LinkContainer to='/FindMyProgram'/> */}
+            {/* <NavItem>Homepage</NavItem> */}
+          {/* </LinkContainer> */}
         </div> 
       </div>
     );
   }
 }
-        // {/* <ImageBackground source={'../images/findMyWorkoutPlan.PNG'} style={{width: '100%', height: '100%'}}> */}
-        // {/* <ImageBackground source={require('../images/findMyWorkoutPlan.PNG')} style={{width: '100%', height: '100%'}}> */}
-
-              
-        // <div className="lander" style={backGroundStyle} />
-        //   {/* <img src={require('../images/findMyWorkoutPlan.PNG')} width="400" height="400px"/> */}
-          
-        // </div>
-        // // </ImageBackground>
-
-        // {/* <Image
-        //     style={{flex:1, height: undefined, width: undefined}}
-        //     source={require('../images/findMyWorkoutPlan.PNG')}
-        //     resizeMode="contain"
-        //   /> */}
