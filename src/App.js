@@ -73,17 +73,20 @@ class App extends Component {
                   <LinkContainer to="/">
                     <NavItem>Homepage</NavItem>
                   </LinkContainer>
-                  <LinkContainer to="/calorieGraphParent">
+                  {/* <LinkContainer to="/calorieGraphParent">
                     <NavItem>Calorie Graph</NavItem>
-                  </LinkContainer>
-                  <LinkContainer to="/calorie">
+                  </LinkContainer> */}
+                  {/* <LinkContainer to="/calorie">
                     <NavItem>Calorie Tracker</NavItem>
+                  </LinkContainer> */}
+                  <LinkContainer to="/WOD">
+                    <NavItem>WOD</NavItem>
                   </LinkContainer>
                   <LinkContainer to="/ContactUs">
                     <NavItem>Contact Us</NavItem>
                   </LinkContainer>
                   <LinkContainer to="/PersonalizedProgramming">
-                    <NavItem>Personalized Programming</NavItem>
+                    <NavItem>Personalized Programming and Nutrition</NavItem>
                   </LinkContainer>
                   <LinkContainer to="/FindMyProgram">
                     <NavItem>Find my Program</NavItem>
