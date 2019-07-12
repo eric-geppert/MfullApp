@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import "./Testimonials.css";
+import "./Testimonials.css";
 
 const style1= {
   marginLeft: "100px",
@@ -11,35 +11,109 @@ export default class Home extends Component {
       <div className="Home">
         <div className="lander">
           <h1>Testimonials</h1>
-          <div className="indent" style={style1}>
-            <p style={{paddingTop:"50px"}}>
-            “I wanted a more personalized experience to better hit my goals. Since starting...
-            I have lost 30lbs and about 10% body fat, which has been amazing because those were 
-            the two things I cared the most about losing. He goes out of his way to help you 
-            reach your goals and he's always motivating you to go past your goals and set new ones!”
-            </p>
-            <p style={{textAlign: "right"}}>-Aaidan Hebert</p>
-            <p style={{paddingTop:"50px"}}>
-              “I was able to dramatically improve my cardio while getting stronger. It’s a great 
-              experience...if you do everything you are supposed to, you will get results.”
-            </p>
-            <p style={{textAlign: "right"}}>-Chase Dolfi</p>
-            <p style={{paddingTop:"50px"}}>
-              “Mitch is an excellent coach and will put in time for any questions you might have. 
-              He knows what he is talking about and will help you produce.”
-            </p>
-            <p style={{textAlign: "right"}}>-Colton Taylor</p>
-            <p style={{paddingTop:"50px"}}>
-            “I've learned many exercises that engage muscle groups I previously did not know how to work; 
-            and with Mitch's help I continue to learn how to improve my nutrition in order to increase 
-            strength, recover quickly after workouts, and enhance my overall health. Mitch has helped me
-             work towards many of my personal goals.” 
-            </p>
-            <p style={{textAlign: "right"}}>-Katya Cope</p>
+          <div className="container-of-images">
+            <div>
+              <img
+                src={require('../images/testimonials/Aaidan.jpeg')}
+                paddingleft="100px"
+              />
+            </div>
+            <div className="padding-right">
+              <p style={{paddingTop:"50px"}}>
+              “I wanted a more personalized experience to better hit my goals. Since starting...
+              I have lost 30lbs and about 10% body fat, which has been amazing because those were 
+              the two things I cared the most about losing. He goes out of his way to help you 
+              reach your goals and he's always motivating you to go past your goals and set new ones!”
+              </p>
+              <p style={{textAlign: "right"}}>-Aaidan Hebert</p>
+            </div>
+            <div id="person2">
+              <p style={{paddingTop:"50px"}}>
+                “I was able to dramatically improve my cardio while getting stronger. It’s a great 
+                experience...if you do everything you are supposed to, you will get results.”
+              </p>
+              <p style={{textAlign: "right"}}>-Chase Dolfi</p>
+            </div>
+            <div>
+              <img
+                src={require('../images/testimonials/Chase.JPG')}
+              />
+            </div>
+            <div>
+              <img
+                src={require('../images/testimonials/Katya.jpg')}
+              />
+            </div>
+            <div className="padding-right">
+              <p style={{paddingTop:"50px"}}>
+              “I've learned many exercises that engage muscle groups I previously did not know how to work; 
+              and with Mitch's help I continue to learn how to improve my nutrition in order to increase 
+              strength, recover quickly after workouts, and enhance my overall health. Mitch has helped me
+              work towards many of my personal goals.” 
+              </p>
+              <p style={{textAlign: "right"}}>-Katya Cope</p>
+            </div>
+            <div id="person3">
+              <p style={{paddingTop:"50px"}}>
+                “Mitch is an excellent coach and will put in time for any questions you might have. 
+                He knows what he is talking about and will help you produce.”
+              </p>
+              <p style={{textAlign: "right"}}>-Colton Taylor</p>
+            </div>
+            {/* <img
+              src={require('../images/testimonials/Colton.jpg')}
+            /> */}
+            {/* need to shrink Coltons img before I can use it here */}
           </div>
-
         </div>
       </div>
     );
   }
 }
+
+
+{/* <div className="Home">
+        <div className="lander">
+          <h1>Testimonials</h1>
+
+          <div className="indent" style={style1}>
+            <img */}
+                // style={{
+                  // flex: 1, //does nothing
+                  // alignSelf: 'stretch',
+                  // width: "40%",
+                  // marginTop: "-10%",
+                  // marginBottom: "-10%"
+                  // height: undefined,
+                // }}
+      //           src={require('../images/testimonials/Aaidan.jpeg')}
+
+      //           // src={require('../images/findMyWorkoutPlan.PNG')}
+      //         />
+      //       <p style={{paddingTop:"50px"}}>
+      //       “I wanted a more personalized experience to better hit my goals. Since starting...
+      //       I have lost 30lbs and about 10% body fat, which has been amazing because those were 
+      //       the two things I cared the most about losing. He goes out of his way to help you 
+      //       reach your goals and he's always motivating you to go past your goals and set new ones!”
+      //       </p>
+      //       <p style={{textAlign: "right"}}>-Aaidan Hebert</p>
+      //       <p style={{paddingTop:"50px"}}>
+      //         “I was able to dramatically improve my cardio while getting stronger. It’s a great 
+      //         experience...if you do everything you are supposed to, you will get results.”
+      //       </p>
+      //       <p style={{textAlign: "right"}}>-Chase Dolfi</p>
+      //       <p style={{paddingTop:"50px"}}>
+      //         “Mitch is an excellent coach and will put in time for any questions you might have. 
+      //         He knows what he is talking about and will help you produce.”
+      //       </p>
+      //       <p style={{textAlign: "right"}}>-Colton Taylor</p>
+      //       <p style={{paddingTop:"50px"}}>
+      //       “I've learned many exercises that engage muscle groups I previously did not know how to work; 
+      //       and with Mitch's help I continue to learn how to improve my nutrition in order to increase 
+      //       strength, recover quickly after workouts, and enhance my overall health. Mitch has helped me
+      //        work towards many of my personal goals.” 
+      //       </p>
+      //       <p style={{textAlign: "right"}}>-Katya Cope</p>
+      //     </div>
+      //   </div>
+      // </div>
