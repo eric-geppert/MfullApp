@@ -51,47 +51,19 @@ export default class Movement extends Component {
                   Dumbell BenchPress
                 </p> 
               </div>
+              <div id="thruster">
+                <iframe src='https://www.youtube.com/embed/yP7k8eGvymA'
+                  frameBorder='0'
+                  allow='autoplay; encrypted-media'
+                  allowFullScreen
+                  title='video'
+                />
+                <p style={pStyle}>
+                  Thruster
+                </p> 
+              </div>
             </div>
       </div>
     );
   }
 }
-
-{/* <div style={{gridRow: }}> */}
-        {/* <Grid></Grid> */}
-        {/* <Table></Table>
-        <TableRow></TableRow> */}
-        {/* <Grid 
-          container
-          direction="row
-          "> */}
-          {/* <Row> */}
-            {/* <Col> */}
-            {/* className="boxRow" */}
-            {/* <div style={{flexDirection:"row"}} > */}
-
-            {/* </Col> */}
-          {/* </Row> */}
-        {/* </Grid> */}
-        {/* </div>    */}
-
-
-{/* can add width and height to make bigger (make %'s) */}
-          {/* width words, but height only extends to the end of "the space it has to fill
-            need to make every parent div up to that point height 100% in the .css
-            https://stackoverflow.com/questions/38428322/react-component-full-screen-with-height-100" */}
-
-// width="40%"
-//actual width is 30
-
-// https://www.youtube.com/watch?v=VoA-Hhd5e1U// bench video
-//https://www.youtube.com/channel/UCZCkd8X-fGay6kh4PhQ3wCA //main mitch site
-
-//'https://www.youtube.com/embed/E7wJTI-1dvQ' //stack o video
-
-{/* <Player
-            playsInline
-            poster="/assets/poster.png"
-            src="https://youtu.be/yP7k8eGvymA"
-            // src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-          /> */}

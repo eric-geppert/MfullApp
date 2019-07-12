@@ -8,6 +8,7 @@ import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 // import RadioSkills from './RadioSkills';
 import Program from '../containers/Program';
+import './DaysFilter.css';
 
 const styles = theme => ({
   root: {
@@ -39,7 +40,8 @@ class GymFilter extends React.Component {
     let dayList=this.props.filteredWorkoutList.filter(workout =>(this.props.gym===workout.gym)||(this.props.gym==="all"));
     
     return (
-      <div className={classes.root}>
+      // className={classes.root}
+      <div >
         <div className="days">
           <FormControl component="fieldset" className={classes.formControl}>
             <FormLabel component="legend">Days/week</FormLabel>
@@ -72,7 +74,7 @@ class GymFilter extends React.Component {
             </RadioGroup>
           </FormControl>
         </div>
-        <div className={"skills"}>
+        <div className="skills">
             {/* <RadioSkills dayList={dayList} days={this.state.days}/> */}
             <Program dayList={dayList} days={this.state.days}/>
         </div>

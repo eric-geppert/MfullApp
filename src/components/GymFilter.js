@@ -43,7 +43,10 @@ class RadioButtonChild extends React.Component {
 
     return (
       <div className={classes.root}>
-        <div className="gym">
+        {/* , */}
+        {/* alignSelf: "center" only aligns down some not over, 
+          other aligns dont work */}
+        <div className="gym" style={{paddingLeft: "30%", paddingRight: "10%"}}>
           <FormControl component="fieldset" className={classes.formControl}>
             <FormLabel component="legend">Gym</FormLabel>
             <RadioGroup
