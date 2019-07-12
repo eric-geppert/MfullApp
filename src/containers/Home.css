@@ -1,5 +1,4 @@
 .Home .lander {
-    padding: 80px 0;
     text-align: center;
   }
   
@@ -9,6 +8,18 @@
   }
   
   .Home .lander p {
-    color: #999;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
   }
+
+  .Home .lander .pic {
+    /* margin-top: -12%; */
+    /* margin-bottom: -11% */
+
+  }
+
+  /* .Home .lander .info{
+    margin-top: -100px
+  } */
   

@@ -7,7 +7,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import workouts from '../workout';
-import RadioButtonChild from './RadioButtonChild'
+import RadioButtonChild from './GymFilter'
 
 const styles = theme => ({
   root: {

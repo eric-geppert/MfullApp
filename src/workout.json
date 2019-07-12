@@ -1,260 +1,86 @@
 [
-    {
-      "name": "work1",
-      "goal": "gain",
-      "gym": "crossfit",
-      "days": "3",
-      "skill": "beginner",
-      "pdfLink": "./images/handout"
-    },
-    {
-        "name": "work2",
-        "goal": "lose",
-        "gym": "crossfit",
-        "days": "3",
-        "skill": "beginner",
-        "pdfLink": "./images/handout"
-    },
-    {
-        "name": "work3",
-        "goal": "maintain",
-        "gym": "crossfit",
-        "days": "3",
-        "skill": "beginner",
-        "pdfLink": "./images/handout"
-
-    },
-    {
-        "name": "work4",
-        "goal": "gain",
-        "gym": "weightlifting",
-        "days": "4",
-        "skill": "beginner",
-        "pdfLink": "/images/handout"
-
-    },
-    {
-        "name": "work5",
-        "goal": "gain",
-        "gym": "weightlifting",
-        "days": "4",
-        "skill": "advanced",
-        "pdfLink": "/images/handout"
-
-    },
-
-
-    {
-        "name": "work6",
-        "goal": "gain",
-        "gym": "crossfit",
-        "days": "3",
-        "skill": "beginner",
-        "pdfLink": "./images/handout"
-      },
-      {
-          "name": "work7",
-          "goal": "maintain",
-          "gym": "crossfit",
-          "days": "3",
-          "skill": "beginner",
-          "pdfLink": "./images/handout"
-  
-      },
-      {
-          "name": "work8",
-          "goal": "gain",
-          "gym": "weightlifting",
-          "days": "4",
-          "skill": "beginner",
-          "pdfLink": "/images/handout"
-  
-      },
-      {
-          "name": "work9",
-          "goal": "gain",
-          "gym": "weightlifting",
-          "days": "4",
-          "skill": "advanced",
-          "pdfLink": "/images/handout"
-  
-      },
-      {
-        "name": "work10",
-        "goal": "lose",
-        "gym": "crossfit",
-        "days": "3",
-        "skill": "beginner",
-        "pdfLink": "./images/handout"
-    },
-    {
-        "name": "work11",
-        "goal": "gain",
-        "gym": "crossfit",
-        "days": "3",
-        "skill": "beginner",
-        "pdfLink": "./images/handout"
-      },
-      {
-          "name": "work12",
-          "goal": "lose",
-          "gym": "crossfit",
-          "days": "3",
-          "skill": "beginner",
-          "pdfLink": "./images/handout"
-      },
-      {
-          "name": "work13",
-          "goal": "maintain",
-          "gym": "crossfit",
-          "days": "3",
-          "skill": "beginner",
-          "pdfLink": "./images/handout"
-  
-      },
-      {
-          "name": "work14",
-          "goal": "gain",
-          "gym": "weightlifting",
-          "days": "4",
-          "skill": "beginner",
-          "pdfLink": "/images/handout"
-  
-      },
-      {
-          "name": "work15",
-          "goal": "gain",
-          "gym": "weightlifting",
-          "days": "4",
-          "skill": "advanced",
-          "pdfLink": "/images/handout"
-  
-      },
-      {
-          "name": "work16",
-          "goal": "gain",
-          "gym": "crossfit",
-          "days": "3",
-          "skill": "beginner",
-          "pdfLink": "./images/handout"
-        },
-        {
-            "name": "work17",
-            "goal": "maintain",
-            "gym": "crossfit",
-            "days": "3",
-            "skill": "beginner",
-            "pdfLink": "./images/handout"
-    
-        },
-        {
-            "name": "work18",
-            "goal": "gain",
-            "gym": "weightlifting",
-            "days": "4",
-            "skill": "beginner",
-            "pdfLink": "/images/handout"
-    
-        },
-        {
-            "name": "work19",
-            "goal": "gain",
-            "gym": "weightlifting",
-            "days": "4",
-            "skill": "advanced",
-            "pdfLink": "/images/handout"
-    
-        },
-        {
-          "name": "work20",
-          "goal": "lose",
-          "gym": "crossfit",
-          "days": "3",
-          "skill": "beginner",
-          "pdfLink": "./images/handout"
-        },
-        {
-            "name": "work21",
-            "goal": "gain",
-            "gym": "crossfit",
-            "days": "3",
-            "skill": "beginner",
-            "pdfLink": "./images/handout"
-          },
-          {
-              "name": "work22",
-              "goal": "lose",
-              "gym": "crossfit",
-              "days": "3",
-              "skill": "beginner",
-              "pdfLink": "./images/handout"
-          },
-          {
-              "name": "work23",
-              "goal": "maintain",
-              "gym": "crossfit",
-              "days": "3",
-              "skill": "beginner",
-              "pdfLink": "./images/handout"
-      
-          },
-          {
-              "name": "work24",
-              "goal": "gain",
-              "gym": "weightlifting",
-              "days": "4",
-              "skill": "beginner",
-              "pdfLink": "/images/handout"
-      
-          },
-          {
-              "name": "work25",
-              "goal": "gain",
-              "gym": "weightlifting",
-              "days": "4",
-              "skill": "advanced",
-              "pdfLink": "/images/handout"
-      
-          },
-          {
-              "name": "work26",
-              "goal": "gain",
-              "gym": "crossfit",
-              "days": "3",
-              "skill": "beginner",
-              "pdfLink": "./images/handout"
-            },
-            {
-                "name": "work27",
-                "goal": "maintain",
-                "gym": "crossfit",
-                "days": "3",
-                "skill": "beginner",
-                "pdfLink": "./images/handout"
-            },
-            {
-                "name": "work28",
-                "goal": "gain",
-                "gym": "weightlifting",
-                "days": "4",
-                "skill": "beginner",
-                "pdfLink": "/images/handout"
-    
-            },
-            {
-                "name": "work29",
-                "goal": "gain",
-                "gym": "weightlifting",
-                "days": "4",
-                "skill": "advanced",
-                "pdfLink": "/images/handout"
-            },
-            {
-              "name": "work30",
-              "goal": "lose",
-              "gym": "crossfit",
-              "days": "3",
-              "skill": "beginner",
-              "pdfLink": "./images/handout"
-          }
+  {
+    "name": "At Home Total Body 5 days a week Version 1",
+    "gym": "AtHomeTotalBody",
+    "days": "5",
+    "pdfLink": "../images/workouts/AtHomeTotalBody5V1.pdf",
+    "pages": "10"
+  },
+  {
+    "name": "At Home Total Body 4 days a week Version 1",
+    "gym": "AtHomeTotalBody",
+    "days": "4",
+    "pdfLink": "../images/workouts/AtHomeTotalBody4V1.pdf",
+    "pages": "9"
+  },
+  {
+    "name": "At Home Total Body 3 days a week Version 1",
+    "gym": "AtHomeTotalBody",
+    "days": "3",
+    "pdfLink": "../images/workouts/AtHomeTotalBody3V1.pdf",
+    "pages": "7"
+  },
+  {
+    "name": "Conditioning Weight Loss 5 days a week Version 1",
+    "gym": "ConditioningWeightLoss",
+    "days": "5",
+    "pdfLink": "../images/workouts/ConditioningWeightLoss5V1.pdf",
+    "pages": "17"
+  },
+  {
+    "name": "Conditioning Weight Loss 4 days a week Version 1",
+    "gym": "ConditioningWeightLoss",
+    "days": "4",
+    "pdfLink": "../images/workouts/ConditioningWeightLoss4V1.pdf",
+    "pages": "9"
+  },
+  {
+    "name": "Conditioning Weight Loss 3 days a week Version 1",
+    "gym": "ConditioningWeightLoss",
+    "days": "3",
+    "pdfLink": "../images/workouts/ConditioningWeightLoss3V1.pdf",
+    "pages": "7"
+  },
+  {
+    "name": "Functional Fitness HIIT - 5 Days a Week - Version 1",
+    "gym": "FunctionalFitnessHIIT",
+    "days": "5",
+    "pdfLink": "../images/workouts/FunctionalFitnessHIIT5V1.pdf",
+    "pages": "19"
+  },
+  {
+    "name": "Functional Fitness HIIT - 4 Days a Week - Version 1",
+    "gym": "FunctionalFitnessHIIT",
+    "days": "4",
+    "pdfLink": "../images/workouts/FunctionalFitnessHIIT4V1.pdf",
+    "pages": "15"
+  },
+  {
+    "name": "Functional Fitness HIIT - 3 Days a Week - Version 1",
+    "gym": "FunctionalFitnessHIIT",
+    "days": "3",
+    "pdfLink": "../images/workouts/FunctionalFitnessHIIT3V1.pdf",
+    "pages": "12"
+  },
+  {
+    "name": "Total Body Transformation - 5 days a week - Version 1",
+    "gym": "TotalBodyTransformation",
+    "days": "5",
+    "pdfLink": "../images/workouts/TotalBodyTransformation5V1.pdf",
+    "pages": "18"
+  },
+  {
+    "name": "Total Body Transformation - 4 days a week - Version 1",
+    "gym": "TotalBodyTransformation",
+    "days": "4",
+    "pdfLink": "../images/workouts/TotalBodyTransformation4V1.pdf",
+    "pages": "15"
+  },
+  {
+    "name": "Total Body Transformation - 3 days a week - Version 1",
+    "gym": "TotalBodyTransformation",
+    "days": "3",
+    "pdfLink": "../images/workouts/TotalBodyTransformation3V1.pdf",
+    "pages": "13"
+  }
 ]

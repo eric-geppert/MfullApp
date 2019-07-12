@@ -6,7 +6,9 @@ import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
-import RadioSkills from './RadioSkills';
+// import RadioSkills from './RadioSkills';
+import Program from '../containers/Program';
+import './DaysFilter.css';
 
 const styles = theme => ({
   root: {
@@ -20,7 +22,7 @@ const styles = theme => ({
   },
 });
 
-class RadioDays extends React.Component {
+class GymFilter extends React.Component {
   constructor(props) {
     super();
     this.state = {
@@ -38,7 +40,8 @@ class RadioDays extends React.Component {
     let dayList=this.props.filteredWorkoutList.filter(workout =>(this.props.gym===workout.gym)||(this.props.gym==="all"));
     
     return (
-      <div className={classes.root}>
+      // className={classes.root}
+      <div >
         <div className="days">
           <FormControl component="fieldset" className={classes.formControl}>
             <FormLabel component="legend">Days/week</FormLabel>
@@ -71,15 +74,16 @@ class RadioDays extends React.Component {
             </RadioGroup>
           </FormControl>
         </div>
-        <div className={"skills"}>
-            <RadioSkills dayList={dayList} days={this.state.days}/>
+        <div className="skills">
+            {/* <RadioSkills dayList={dayList} days={this.state.days}/> */}
+            <Program dayList={dayList} days={this.state.days}/>
         </div>
       </div>
     );
   }
 }
 
-RadioDays.propTypes = {
+GymFilter.propTypes = {
   classes: PropTypes.object.isRequired,
 };
-export default withStyles(styles)(RadioDays);    
+export default withStyles(styles)(GymFilter);    

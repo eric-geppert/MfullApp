@@ -1,7 +1,64 @@
 .App {
   margin-top: 15px;
+  height: 100%;
+  /* background-color: red; */
+  /* background-image: './images/findMyWorkoutPlan.PNG' */
+  /* text-align: center; */
+
 }
+
+.App > .body{
+  height: 100%;
+  background: black;
+  /* background-image: './images/findMyWorkoutPlan.PNG' */ 
+
+}
+
+/* .navbar-default{
+  margin: 0px;
+  margin-right: -20%;
+  /* temporary fix^ CANNONT FIGURE IT OUT tried
+  abunch of stack overflow answers */
+
+  /* text-align: center;
+  justify-content: center; */
+/* } */
+
+.navbar > .container {
+  margin: 0;
+  margin-left:15px;
+  /* width:10%; */
+  /* display: inline; */
+  /* justify-content: center;
+  justify-items: center;
+  justify-self: center; */
+  /* justify-content: flex-start; */
+  /* justify-items: right */
+ }
+/* .fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+} */
+
+/* .App .navbar-justify-content-center{
+  width:100%;
+  
+} */
+/* .App .app-top{
+  background: linear-gradient(to bottom,#33ccff 25%, #ff99cc 100%)
+
+} */
 
 .App .navbar-brand {
   font-weight: bold;
+  /* width: 100%; */
+  /* makes bar touch both sides */
+}
+
+.App .nav-brand {
+  width: 100%;
+  justify-content: center
 }

@@ -1,0 +1,16 @@
+
+
+.boxRow{
+    /* display: flex //try this */
+    flex: 1;
+    flex-direction: row-reverse;
+    flex-flow: row;
+}
+
+.container-of-boxes {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
