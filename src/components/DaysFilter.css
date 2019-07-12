@@ -1,0 +1,19 @@
+/* going to attempt to just add grid to this page, most likely going to need to
+create a parent object put css in there and then call gymFilter */
+
+/* .gym {
+    text-align: center;
+} */
+.gym-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+
+}
+
+.skills {
+    padding-top: 60px;
+    margin-left: -140%;
+}
+
+/* can do % just not with neg number */
