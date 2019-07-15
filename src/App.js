@@ -21,7 +21,6 @@ import "./App.css";
 class App extends Component {
   constructor(props) {
     super(props);
-  
     this.state = {
       isAuthenticated:  true, //change later 
       isLoading: false
