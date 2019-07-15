@@ -1,10 +1,7 @@
 import React, { Component } from "react";
-import { LinkContainer } from "react-router-bootstrap";
-// import { Nav, Navbar, NavItem } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import { Button } from 'reactstrap';
 import "./Home.css";
-import { Button } from "@material-ui/core";
 
 export default class Home extends Component {
   
@@ -15,29 +12,29 @@ export default class Home extends Component {
           <div className="pic">
             <img
                 style={{
-                  // flex: 1, //does nothing
-                  // alignSelf: 'stretch',
                   width: "40%",
                   marginTop: "-10%",
                   marginBottom: "-10%"
-                  // height: undefined,
                 }}
                 src={require('../images/blackLogo.png')}
-
-                // src={require('../images/findMyWorkoutPlan.PNG')}
               />
             </div>
-          {/* <div className="info"> */}
-            {/* <h1>mission statement:</h1> */}
             <p>Everyone needs a plan in gym. </p>
             <p> Reach your fitness goals with our workout plan database that has plans for all people of all fitness levels </p>
-          {/* </div> */}
-          <Button>
-            <Link to="/FindMyProgram">FIND A PLAN</Link>
-          </Button>
-          {/* <LinkContainer to='/FindMyProgram'/> */}
-            {/* <NavItem>Homepage</NavItem> */}
-          {/* </LinkContainer> */}
+              <Button color="primary" style={{marginRight:"100px", marginTop: "50px"}}>
+                <Link to="/FindMyProgram"> 
+                  <a style={{color: "#ffffff"}}>
+                    Find a Plan
+                  </a>
+                </Link>
+              </Button>
+              <Button color="primary" style={{ marginTop: "50px"}}>
+                <Link to="/Signup"> 
+                  <a style={{color: "#ffffff"}}>
+                    Sign Up
+                  </a>
+                </Link>
+              </Button>
         </div> 
       </div>
     );
