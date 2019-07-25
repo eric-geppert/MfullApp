@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { Button } from 'reactstrap';
 import "./Home.css";
 
 export default class Home extends Component {
@@ -10,40 +12,31 @@ export default class Home extends Component {
           <div className="pic">
             <img
                 style={{
-                  // flex: 1, //does nothing
-                  // alignSelf: 'stretch',
                   width: "40%",
                   marginTop: "-10%",
                   marginBottom: "-10%"
-                  // height: undefined,
                 }}
                 src={require('../images/blackLogo.png')}
-
-                // src={require('../images/findMyWorkoutPlan.PNG')}
               />
             </div>
-          {/* <div className="info"> */}
-            {/* <h1>mission statement:</h1> */}
             <p>Everyone needs a plan in gym. </p>
             <p> Reach your fitness goals with our workout plan database that has plans for all people of all fitness levels </p>
-          {/* </div> */}
+              <Button color="primary" style={{marginRight:"100px", marginTop: "50px"}}>
+                <Link to="/FindMyProgram"> 
+                  <a style={{color: "#ffffff"}}>
+                    Find a Plan
+                  </a>
+                </Link>
+              </Button>
+              <Button color="primary" style={{ marginTop: "50px"}}>
+                <Link to="/Signup"> 
+                  <a style={{color: "#ffffff"}}>
+                    Sign Up
+                  </a>
+                </Link>
+              </Button>
         </div> 
       </div>
     );
   }
 }
-        // {/* <ImageBackground source={'../images/findMyWorkoutPlan.PNG'} style={{width: '100%', height: '100%'}}> */}
-        // {/* <ImageBackground source={require('../images/findMyWorkoutPlan.PNG')} style={{width: '100%', height: '100%'}}> */}
-
-              
-        // <div className="lander" style={backGroundStyle} />
-        //   {/* <img src={require('../images/findMyWorkoutPlan.PNG')} width="400" height="400px"/> */}
-          
-        // </div>
-        // // </ImageBackground>
-
-        // {/* <Image
-        //     style={{flex:1, height: undefined, width: undefined}}
-        //     source={require('../images/findMyWorkoutPlan.PNG')}
-        //     resizeMode="contain"
-        //   /> */}
